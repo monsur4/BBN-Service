@@ -51,8 +51,8 @@ public class ContestantServiceImpl implements ContestantService {
     }
 
     @Override
-    public void deleteContestant(Contestant contestant) {
-        log.info("--- deleting contestant  {} ---", contestant);
-        contestantRepository.delete(contestant);
+    public void deleteContestantById(String id) {
+        log.info("--- deleting contestant  {} ---", id);
+        contestantRepository.deleteById(id);
     }
 }

@@ -39,7 +39,7 @@ public class ContestantController {
         return contestantService.findContestantByTag(tag);
     }
 
-    @PostMapping
+    @PostMapping(produces = "application/json", consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     @PreAuthorize("hasRole('ADMIN')")
     public Contestant addContestant(@RequestBody Contestant contestant, @AuthenticationPrincipal User user){
@@ -47,17 +47,17 @@ public class ContestantController {
         return contestantService.addContestant(contestant);
     }
 
-    @PutMapping
+    @PutMapping("/id/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)
     @PreAuthorize("hasRole('ADMIN')")
     public Contestant updateContestant(@RequestBody Contestant contestant){
         return contestantService.updateContestant(contestant);
     }
 
-    @DeleteMapping
-    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @DeleteMapping("/id/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     @PreAuthorize("hasRole('ADMIN')")
-    public void deleteContestant(@RequestBody Contestant contestant){
-        contestantService.deleteContestant(contestant);
+    public void deleteContestant(@PathVariable("id") String id){
+        contestantService.deleteContestantById(id);
     }
 }

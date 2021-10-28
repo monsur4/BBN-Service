@@ -1,11 +1,8 @@
 package com.mon.bbn.model;
 
-import com.mon.bbn.utils.Popularity;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.net.URI;
 
 @Data
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
@@ -47,7 +44,7 @@ public class Contestant {
     public enum Status{
         ACTIVE,
         ELIMINATED,
-        PROBATION,
+        PROBATION
     }
 
     @Id
@@ -66,8 +63,6 @@ public class Contestant {
     private String imageUri;
 
     // constructor
-
-
     public Contestant(String name, int age, Sex sex, long popularity, long taskCompleted,
                       Status status, String bio, boolean isFavorite, String tag, String state, String imageUri) {
         this.name = name;

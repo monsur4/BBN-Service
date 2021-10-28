@@ -28,5 +28,5 @@ public interface ContestantService {
     /**
      * delete methods
      */
-    void deleteContestant(Contestant contestant);
+    void deleteContestantById(String id);
 }
