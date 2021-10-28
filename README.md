@@ -55,8 +55,8 @@
     <li><a href="https://probable-analog-329407.oa.r.appspot.com/api/contestants/id/6178126e651f976b9cfbcfa6">Fetch contestant by id</a></li>
     <li><a href="https://probable-analog-329407.oa.r.appspot.com/api/contestants/tag/nini">Fetch contestant by tag</a></li>
     <li>Method: Post - <a href="https://probable-analog-329407.oa.r.appspot.com/api/contestants">Create new contestant</a></li>
-    <li>Method: Put - <a href="https://probable-analog-329407.oa.r.appspot.com/api/contestants">Update an existing contestant</a></li>
-    <li>Method: Delete - <a href="https://probable-analog-329407.oa.r.appspot.com/api/contestants">Delete a contestant</a></li>
+    <li>Method: Put - <a href="https://probable-analog-329407.oa.r.appspot.com/api/contestants/id/{id}">Update an existing contestant</a></li>
+    <li>Method: Delete - <a href="https://probable-analog-329407.oa.r.appspot.com/api/contestants/id/{id}">Delete a contestant</a></li>
 </ul>
 
 <h2>Setting up for Local Development and Testing</h2>
