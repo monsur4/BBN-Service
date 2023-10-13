@@ -78,6 +78,7 @@
     <ul>
         <li>navigate to the src/main/test directory</li>
         <li>run the ContestantControllerTests.class as a class test. <strong>It is important to not run the test methods individually as a test ordering has been set to simulate a typical use case.</strong></li>
+        <li>or simply run the maven command: <strong>mvn clean test</strong></li>
     </ul>
 </ul>
 </div>
