@@ -7,8 +7,8 @@
 
 <h1>BBN-Service</h1>
 <h2>Overview</h2>
-<p>The <strong>bbn service app</strong> is an application that was originally meant to provide a backend api for the <a href="https://github.com/monsur4/BBN"> demo
-    bbn android application.</a> However, the application provides support to both web and android users to query endpoints to create an account, login,
+<p>The <strong>bbn service app</strong> is an application that was originally meant to serve as a backend api for the <a href="https://github.com/monsur4/BBN"> demo
+    bbn android application.</a> However, the application provides support to both web and android applications to query endpoints to create an account, login,
     authenticate user and admin, and allow manipulation of data.</p>
 
 <ul>
