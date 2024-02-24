@@ -70,7 +70,7 @@
 
 <li>build the project
     <ul>
-        <li>use a suitable ide to clean and build the project</li>
+        <li>use a suitable ide to clean and build the project or run <strong>mvn clean package</strong></li>
         <li>then run the project</li>
     </ul>
 </li>
